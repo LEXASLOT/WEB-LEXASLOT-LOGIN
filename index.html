@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banner Naga Animasi</title>
+    <style>
+    
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #000; /* Latar hitam */
+        }
+
+        .banner-container {
+            max-width: 600px;
+            width: 95%;
+            border-radius: 20px;
+            overflow: hidden;
+            position: relative;
+            /* Efek Animasi: Melayang & Bercahaya */
+            animation: float 4s ease-in-out infinite, glow 2s ease-in-out infinite alternate;
+            box-shadow: 0 0 20px #ff4500;
+        }
+
+        .banner-image {
+            width: 100%;
+            display: block;
+        }
+
+        /* Gerakan Naik Turun */
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+        }
+
+        /* Cahaya Berkedip */
+        @keyframes glow {
+            from { box-shadow: 0 0 10px #ff4500; }
+            to { box-shadow: 0 0 40px #ff8c00, 0 0 60px #ffd700; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="banner-container">
+        <img src="C:\Users\BLUE IT Computer\Downloads/gambar.jpg.jpg" alt="Banner Naga" class="banner-image">
+    </div>
+
+</body>
+</html>
